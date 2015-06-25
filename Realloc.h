@@ -11,12 +11,12 @@
 namespace Buffer
 {
 	template <typename T> bool Realloc(T** pBuffer_in_out, 
-									   unsigned long AllocCount_in,
+									   ULONG_PTR AllocCount_in,
 									   bool ClearBuffer_in = false)
 	{
 		if (pBuffer_in_out != NULL)
 		{
-			unsigned long AllocSize = AllocCount_in * sizeof(T);
+			ULONG_PTR AllocSize = AllocCount_in * sizeof(T);
 			void *pRealloc = realloc(*pBuffer_in_out, AllocSize);
 
 			if (pRealloc != NULL)
