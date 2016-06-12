@@ -17,9 +17,6 @@
 
 #include <sdkddkver.h>
 
-// disable analysis warning in shlobj.h
-#pragma warning (disable : 6387)
-
 #if defined _AFXDLL || defined _AFXEXT
 	#include <afxwin.h>
 	#include <afxcmn.h>
